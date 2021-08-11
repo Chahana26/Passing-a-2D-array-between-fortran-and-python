@@ -1,0 +1,5 @@
+gfortran -c -fPIC 2dfortran.f90 -o 2dfortran.o
+gfortran -c -fPIC 2dwrap.f90 -o 2dwrap.o
+ar -rcs libtwod.a 2dfortran.o 2dwrap.o
+python 2dpython.py
+python 2dexecute.py
